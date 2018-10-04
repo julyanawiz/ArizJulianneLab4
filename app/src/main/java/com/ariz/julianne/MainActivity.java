@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.constraintlayout);
+        setContentView(R.layout.activity_main);
 
         mButton = (Button)findViewById(R.id.button);
         normal = (Button)findViewById(R.id.normal);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar snackbar = Snackbar.make(normal, "I am normal", Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(normal, "This is my First Snackbar", Snackbar.LENGTH_LONG);
                 snackbar.show();
 
 
